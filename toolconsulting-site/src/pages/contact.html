@@ -1,0 +1,63 @@
+<!--
+slug: contact
+titre: Contact | TOOL Consulting, Casablanca
+description: Un projet Dynamics 365, Power Platform, Microsoft 365 ou Azure ? Contactez TOOL Consulting : info@toolconsulting.com, +212 5 22 58 97 95, Sidi Maârouf, Casablanca.
+-->
+<section class="bandeau">
+  <div class="conteneur">
+    <p class="fil"><a href="/">Accueil</a> / Contact</p>
+    <p class="sur-titre">Contact</p>
+    <h1>Vous avez un projet&#8239;? Parlons-en.</h1>
+    <p class="chapo">Conseil, brochure, devis ou simple question : un consultant vous répond sous 48 heures ouvrées.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="conteneur contact">
+    <div>
+      <h2>Nos coordonnées</h2>
+      <ul class="coordonnees">
+        <li><span class="pastille">{{icon:mail}}</span><div><span class="coordonnees__libelle">Courriel</span><a href="mailto:info@toolconsulting.com">info@toolconsulting.com</a></div></li>
+        <li><span class="pastille pastille--bleu">{{icon:phone}}</span><div><span class="coordonnees__libelle">Téléphone</span><a href="tel:+212522589795">+212 5 22 58 97 95</a></div></li>
+        <li><span class="pastille">{{icon:map-pin}}</span><div><span class="coordonnees__libelle">Adresse</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Lotissement+Lina+Sidi+Maarouf+Casablanca" rel="noopener">274, lotissement Lina, Plateau, 2<sup>e</sup> étage<br>Sidi Maârouf, Casablanca, Maroc</a></div></li>
+      </ul>
+      <div class="encadre">
+        <p class="encadre__titre">Pour gagner du temps</p>
+        <p>Précisez vos solutions actuelles, le nombre d’utilisateurs concernés et l’échéance visée : nous préparerons un premier échange utile.</p>
+      </div>
+    </div>
+
+    <form class="formulaire" id="formulaire-contact" data-endpoint="" action="mailto:info@toolconsulting.com" method="post" enctype="text/plain">
+      <h2 class="sr-only">Formulaire de contact</h2>
+      <div class="formulaire__ligne">
+        <div class="champ"><label for="nom">Nom et prénom <span class="requis" aria-hidden="true">*</span></label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+        <div class="champ"><label for="societe">Société</label><input id="societe" name="societe" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="formulaire__ligne">
+        <div class="champ"><label for="email">Courriel professionnel <span class="requis" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="champ"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="champ">
+        <label for="sujet">Sujet <span class="requis" aria-hidden="true">*</span></label>
+        <select id="sujet" name="sujet" required>
+          <option value="">Choisir un sujet</option>
+          <option>Projet Dynamics 365 ou Business Central</option>
+          <option>Power Platform ou Power BI</option>
+          <option>Microsoft 365 ou Azure</option>
+          <option>Migration</option>
+          <option>Support et TMA</option>
+          <option>Licences</option>
+          <option>Demande de brochure ou de devis</option>
+          <option>Candidature</option>
+          <option>Autre demande</option>
+        </select>
+      </div>
+      <div class="champ"><label for="message">Message <span class="requis" aria-hidden="true">*</span></label><textarea id="message" name="message" required></textarea></div>
+      <div class="pot-de-miel" aria-hidden="true"><label for="site_web">Site web</label><input id="site_web" name="site_web" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="champ champ--case"><input id="consentement" name="consentement" type="checkbox" value="oui" required><label for="consentement">J’accepte que TOOL Consulting utilise ces informations pour répondre à ma demande, conformément à la <a href="/mentions-legales/#donnees">politique de confidentialité</a>.</label></div>
+      <button class="bouton" type="submit">Envoyer le message {{icon:arrow-right}}</button>
+      <p class="formulaire__note">Les champs marqués d’un astérisque sont obligatoires.</p>
+      <p class="formulaire__etat" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,217 @@
+{
+  "routes": [
+    {
+      "route": "/notre-approche/",
+      "redirect": "/a-propos/#approche",
+      "statusCode": 301
+    },
+    {
+      "route": "/notre-approche",
+      "redirect": "/a-propos/#approche",
+      "statusCode": 301
+    },
+    {
+      "route": "/nos-produits/",
+      "redirect": "/solutions/",
+      "statusCode": 301
+    },
+    {
+      "route": "/nos-produits",
+      "redirect": "/solutions/",
+      "statusCode": 301
+    },
+    {
+      "route": "/logiciles-de-gestion/",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/logiciles-de-gestion",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-dynamics-365/",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-dynamics-365",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-erp-crm-solutions/",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-erp-crm-solutions",
+      "redirect": "/solutions/#dynamics-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-dynamics-365-business-central/",
+      "redirect": "/solutions/#business-central",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-dynamics-365-business-central",
+      "redirect": "/solutions/#business-central",
+      "statusCode": 301
+    },
+    {
+      "route": "/business-intelligence/",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/business-intelligence",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-power-bi/",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-power-bi",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-power-platform/",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-power-platform",
+      "redirect": "/solutions/#power-platform",
+      "statusCode": 301
+    },
+    {
+      "route": "/productivite-et-collaboration/",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/productivite-et-collaboration",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-office-365/",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-office-365",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-365/",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-365",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/modern-workplace/",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/modern-workplace",
+      "redirect": "/solutions/#microsoft-365",
+      "statusCode": 301
+    },
+    {
+      "route": "/solutions-dinfrastructure/",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/solutions-dinfrastructure",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-azure/",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/microsoft-azure",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/infrastructures-hybride/",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/infrastructures-hybride",
+      "redirect": "/solutions/#azure",
+      "statusCode": 301
+    },
+    {
+      "route": "/en/",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/en",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/wp-admin*",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/wp-login.php",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/feed*",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/en/*",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/assets/*",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html",
+      "statusCode": 404
+    }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self' https:; form-action 'self' mailto: https:; frame-ancestors 'none'; base-uri 'self'"
+  },
+  "mimeTypes": {
+    ".woff2": "font/woff2",
+    ".webp": "image/webp"
+  }
+}

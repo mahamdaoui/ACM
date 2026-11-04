@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titre}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+<meta name="theme-color" content="#1d4d77">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="TOOL Consulting">
+<meta property="og:title" content="{{titre}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="https://toolconsulting.com/assets/img/logo-tool-consulting@2x.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
+<link rel="preload" href="/assets/fonts/caladea-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/carlito-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css?v={{version}}">
+<script src="/assets/js/main.js?v={{version}}" defer></script>
+{{jsonld}}
+</head>
+<body>
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="conteneur entete__barre">
+    <a class="entete__logo" href="/" aria-label="TOOL Consulting, retour à l’accueil">
+      <img src="/assets/img/logo-tool-consulting.png" srcset="/assets/img/logo-tool-consulting.png 1x, /assets/img/logo-tool-consulting@2x.png 2x" width="104" height="65" alt="TOOL Consulting">
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav__bascule" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span class="icone-menu">{{icon:menu}}</span><span class="icone-fermer">{{icon:x}}</span>
+      </button>
+      <div class="nav__panneau" id="menu">
+        <ul class="nav__liste">
+          <li><a class="nav__lien" href="/services/"{{courant:services}}>Services</a></li>
+          <li><a class="nav__lien" href="/solutions/"{{courant:solutions}}>Solutions</a></li>
+          <li><a class="nav__lien" href="/a-propos/"{{courant:a-propos}}>À propos</a></li>
+          <li><a class="nav__lien" href="/carrieres/"{{courant:carrieres}}>Carrières</a></li>
+        </ul>
+        <a class="bouton" href="/contact/">Nous contacter</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
